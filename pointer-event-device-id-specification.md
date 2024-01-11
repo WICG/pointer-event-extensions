@@ -1,0 +1,1 @@
+Proposed specification changes available in this [pull request](https://github.com/w3c/pointerevents/pull/495/files).
