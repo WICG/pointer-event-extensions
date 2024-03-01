@@ -47,7 +47,7 @@ The proposed solution is to add a new attribute `uniqueId` to `PointerEvent.devi
 The proposed WebIDL for this feature is as follows:
 
 ```webidl
-interface deviceProperties {
+dictionary DeviceProperties {
     readonly attribute long uniqueId;
 }
 ```
