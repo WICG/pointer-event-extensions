@@ -34,7 +34,7 @@ Microsoft's Surface Hub device supports detection of multiple pen devices intera
 ## Proposed Solution
 The proposed solution is to add a new attribute `persistentDeviceId` to `PointerEvent` that has the following characteristics:
 
-1. The attribute will be populated if both the digitizer and the pen support getting a unique hardware ID for the pen, with a value of 2 or more.
+1. The attribute will be populated if both the digitizer and the pen support getting a unique hardware ID for the pen, with a value of 1 or more.
 1. The attribute will be `0` if the digitizer and pen support getting a unique hardware ID, but the ID is not available during the current event due to limitations (see [Limitations of Current Hardware](#limitations-of-current-hardware)).
 1. The attribute will be `0` if either the digitizer or the pen do not support getting a unique hardware ID.
 
@@ -43,7 +43,7 @@ The proposed WebIDL for this feature is as follows:
 
 ```webidl
 partial interface PointerEvent {
-    readonly attribute long persistentDeviceId;
+    readonly attribute unsigned long persistentDeviceId;
 }
 ```
 
