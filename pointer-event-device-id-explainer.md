@@ -11,7 +11,7 @@ This is the repository for pointer-event-extensions. You're welcome to
 ## Participate
 - [Issue tracker](https://github.com/WICG/pointer-event-extensions/issues)
 
-# Extending the PointerEvent with Unique persistentDeviceId Attribute
+# Extending the PointerEvent with persistentDeviceId Attribute
 
 ## Status of this Document
 
